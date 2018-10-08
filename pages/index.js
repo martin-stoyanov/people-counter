@@ -65,7 +65,7 @@ class Index extends React.Component {
                 id='drinker' 
                 name='drinker' 
                 options={Object.keys(people)}
-                placeholder={people[0]}
+                placeholder={'Person'}
                 value={selectName}
                 onChange={({ option }) => this.setState({ selectName: option })}
               />

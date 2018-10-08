@@ -27231,7 +27231,7 @@ function (_React$Component) {
         id: "drinker",
         name: "drinker",
         options: Object.keys(people),
-        placeholder: people[0],
+        placeholder: 'Person',
         value: selectName,
         onChange: function onChange(_ref) {
           var option = _ref.option;
