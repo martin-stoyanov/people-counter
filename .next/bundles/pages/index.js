@@ -27145,7 +27145,7 @@ function (_React$Component) {
         formattedArray = [];
 
         for (var prop in people) {
-          formattedArray.push(prop + ":\t" + people[prop]);
+          formattedArray.push(prop + ":\t" + people[prop] + "\n");
         }
       }
     });

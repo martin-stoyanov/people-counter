@@ -33,7 +33,7 @@ class Index extends React.Component {
     });
     formattedArray = [];
     for (let prop in people) {
-      formattedArray.push(prop + ":\t" + people[prop]);
+      formattedArray.push(prop + ":\t" + people[prop] + "\n");
     }
   }
 
