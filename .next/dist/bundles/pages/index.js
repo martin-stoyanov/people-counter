@@ -240,7 +240,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 var people = {};
 var formattedArray = [];
-var selectName = '';
 
 var Index =
 /*#__PURE__*/
@@ -272,25 +271,22 @@ function (_React$Component) {
       configurable: true,
       enumerable: true,
       writable: true,
-      value: function value() {
-        var name = _this.state.selectName;
-        console.log("name is ".concat(name));
+      value: function value(name, addDrink) {
+        console.log(name);
 
-        _this.setState({
-          people: people[name] = people[name] + 1
-        });
-
-        formattedArray = [];
-        console.log(people);
-
-        for (var prop in people) {
-          formattedArray.push(prop + ":\t" + people[prop] + "\n");
+        if (addDrink === true) {
+          _this.setState({
+            people: people[name] = people[name] + 1
+          });
+        } else if (addDrink === false && people[name] >= 1) {
+          _this.setState({
+            people: people[name] = people[name] - 1
+          });
         }
       }
     });
     _this.state = {
       people: people,
-      selectName: selectName,
       formattedArray: formattedArray
     };
     return _this;
@@ -301,18 +297,17 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      var selectName = this.state.selectName;
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 41
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Box"], {
         direction: "column",
         align: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 42
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Box"], {
         direction: "row",
@@ -321,12 +316,12 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 43
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["FormField"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 44
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TextInput"], {
         id: "item",
@@ -334,12 +329,12 @@ function (_React$Component) {
         placeholder: "Person",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 45
         }
       })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Box"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 51
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Button"], {
         label: "Add Person",
@@ -348,133 +343,114 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 52
         }
       }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 58
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Box"], {
-        direction: "row",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Select"], {
-        id: "drinker",
-        name: "drinker",
-        options: Object.keys(people),
-        placeholder: 'Person',
-        value: selectName,
-        onChange: function onChange(_ref) {
-          var option = _ref.option;
-          return _this2.setState({
-            selectName: option
-          });
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Box"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 72
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Button"], {
-        label: "Add drink",
-        onClick: function onClick() {
-          return _this2.changeDrink();
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 73
-        }
-      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 79
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 59
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Table"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 60
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableBody"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 61
         }
       }, Object.keys(people).map(function (key, index) {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableRow"], {
           key: key,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 84
+            lineNumber: 63
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableCell"], {
-          size: "xsmall",
+          size: "small",
           scope: "row",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 85
+            lineNumber: 64
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Text"], {
           weight: "bold",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 86
+            lineNumber: 65
           }
-        }, key)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_grommet_icons__["FormSubtract"], {
-          style: {
-            marginTop: '8px'
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 88
-          }
-        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableCell"], {
+        }, key)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableCell"], {
           size: "xxsmall",
           scope: "row",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 89
+            lineNumber: 67
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Anchor"], {
+          onClick: function onClick() {
+            return _this2.changeDrink(key, false);
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 68
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_grommet_icons__["FormSubtract"], {
+          style: {
+            marginTop: '7px'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 70
+          }
+        }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableCell"], {
+          size: "xxsmall",
+          scope: "row",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 73
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Text"], {
           weight: "bold",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 90
+            lineNumber: 74
           }
-        }, people[key])), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Button"], {
+        }, people[key])), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableCell"], {
+          size: "xxsmall",
+          scope: "row",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 76
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Anchor"], {
           onClick: function onClick() {
-            return _this2.addName();
+            return _this2.changeDrink(key, true);
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 92
+            lineNumber: 77
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_grommet_icons__["FormAdd"], {
           style: {
-            marginTop: '8px'
+            marginTop: '7px'
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 94
+            lineNumber: 79
           }
-        })));
-      })))));
+        }))));
+      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        }
+      })));
     }
   }]);
 

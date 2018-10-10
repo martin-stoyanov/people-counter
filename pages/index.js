@@ -1,16 +1,14 @@
 import React from 'react';
-import { Box, Select, FormField, TextInput, Button, Table, TableBody, TableRow, TableCell, Text } from 'grommet';import Layout from '../components/layout';
+import { Box, Select, FormField, TextInput, Button, Table, TableBody, TableRow, TableCell, Text, Anchor } from 'grommet';import Layout from '../components/layout';
 import { FormAdd, FormSubtract } from 'grommet-icons';
 let people = {};
 let formattedArray = [];
-let selectName = '';
 class Index extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
       people,
-      selectName,
       formattedArray
     };
   }
@@ -24,22 +22,21 @@ class Index extends React.Component {
     console.log(people);
   } 
 
-  changeDrink = () => {
-  let name = this.state.selectName;
-  console.log(`name is ${name}`);
-   this.setState({
-      people: people[name]= people[name] + 1
-    });
-    formattedArray = [];
-    console.log(people);
-    for (let prop in people) {
-      formattedArray.push(prop + ":\t" + people[prop] + "\n");
+  changeDrink = (name, addDrink) => {
+    console.log(name);
+    if (addDrink===true){
+      this.setState({
+        people: people[name]= people[name] + 1
+      });
+    }else if (addDrink===false && people[name] >= 1){
+      this.setState({
+        people: people[name]= people[name] - 1
+      });
     }
   }
 
 
   render() {
-    const { selectName } = this.state;
     return (
       <Layout>
         <Box direction='column' align='center'>
@@ -60,43 +57,33 @@ class Index extends React.Component {
           </Box>
           <br />
           <br />
-          <Box direction='row'>
-              <Select 
-                id='drinker' 
-                name='drinker' 
-                options={Object.keys(people)}
-                placeholder={'Person'}
-                value={selectName}
-                onChange={({ option }) => this.setState({ selectName: option })}
-              />
-              <Box>      
-              <Button 
-                    label='Add drink'
-                    onClick={() => this.changeDrink()}
-              />
-            </Box>
-          </Box>
-          <br />
-          <br />
           <Table>
             <TableBody>
               {Object.keys(people).map((key, index) => (
                 <TableRow key={key}>
-                  <TableCell size='xsmall' scope='row'>
+                  <TableCell size='small' scope='row'>
                     <Text weight='bold'>{key}</Text>
                   </TableCell>
-                  <FormSubtract style={{ marginTop: '8px' }}/>
+                    <TableCell size='xxsmall' scope='row'>
+                      <Anchor
+                        onClick={() => this.changeDrink(key, false)}>
+                        <FormSubtract style={{ marginTop: '7px' }} />
+                      </Anchor>
+                    </TableCell>
                   <TableCell size='xxsmall' scope='row'>
                     <Text weight='bold'>{people[key]}</Text>
                   </TableCell>
-                  <Button 
-                    onClick={() => this.addName()}>
-                  <FormAdd style={{ marginTop: '8px' }}/>
-                  </Button>
+                  <TableCell size='xxsmall' scope='row'>
+                    <Anchor
+                      onClick={() => this.changeDrink(key, true)}>
+                      <FormAdd style={{ marginTop: '7px' }}/>
+                    </Anchor>
+                  </TableCell>
                 </TableRow>
             ))}
             </TableBody>
           </Table>
+          <br />
         </Box>
       </Layout>
     );

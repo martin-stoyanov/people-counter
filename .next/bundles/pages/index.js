@@ -23,12 +23,12 @@ var _jsxFileName = "/Users/Martin/PycharmProjects/drinks-counter/components/foot
 
 
 var Footer = function Footer() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Box */], {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["b" /* Box */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Box */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["b" /* Box */], {
     align: "center",
     pad: "xsmall",
     background: "dark-2",
@@ -84,7 +84,7 @@ var _jsxFileName = "/Users/Martin/PycharmProjects/drinks-counter/components/head
 
 
 var Header = function Header() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Box */], {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["b" /* Box */], {
     direction: "row",
     pad: "medium",
     align: "center",
@@ -94,7 +94,7 @@ var Header = function Header() {
       fileName: _jsxFileName,
       lineNumber: 6
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Box */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["b" /* Box */], {
     direction: "row",
     justify: "left",
     gap: "small",
@@ -102,7 +102,7 @@ var Header = function Header() {
       fileName: _jsxFileName,
       lineNumber: 7
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["e" /* Heading */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["f" /* Heading */], {
     margin: "none",
     level: "3",
     __source: {
@@ -162,7 +162,7 @@ var _jsxFileName = "/Users/Martin/PycharmProjects/drinks-counter/components/layo
 
 
 var Layout = function Layout(props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["d" /* Grommet */], {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["e" /* Grommet */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -24917,7 +24917,7 @@ SelectContainer.defaultProps = {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Select__ = __webpack_require__("./node_modules/grommet/es6/components/Select/Select.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Select__["a"]; });
+/* unused harmony reexport Select */
 
 
 
@@ -28227,11 +28227,11 @@ var withTheme = function withTheme(WrappedComponent) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Anchor__ = __webpack_require__("./node_modules/grommet/es6/components/Anchor/index.js");
-/* unused harmony namespace reexport */
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Anchor__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Box__ = __webpack_require__("./node_modules/grommet/es6/components/Box/index.js");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__Box__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__Box__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Button__ = __webpack_require__("./node_modules/grommet/es6/components/Button/index.js");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__Button__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__Button__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Calendar__ = __webpack_require__("./node_modules/grommet/es6/components/Calendar/index.js");
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Carousel__ = __webpack_require__("./node_modules/grommet/es6/components/Carousel/index.js");
@@ -28251,13 +28251,13 @@ var withTheme = function withTheme(WrappedComponent) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__DropButton__ = __webpack_require__("./node_modules/grommet/es6/components/DropButton/index.js");
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__FormField__ = __webpack_require__("./node_modules/grommet/es6/components/FormField/index.js");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_12__FormField__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_12__FormField__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__Grid__ = __webpack_require__("./node_modules/grommet/es6/components/Grid/index.js");
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__Grommet__ = __webpack_require__("./node_modules/grommet/es6/components/Grommet/index.js");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_14__Grommet__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_14__Grommet__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__Heading__ = __webpack_require__("./node_modules/grommet/es6/components/Heading/index.js");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_15__Heading__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_15__Heading__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__Image__ = __webpack_require__("./node_modules/grommet/es6/components/Image/index.js");
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__InfiniteScroll__ = __webpack_require__("./node_modules/grommet/es6/components/InfiniteScroll/index.js");
@@ -28283,7 +28283,7 @@ var withTheme = function withTheme(WrappedComponent) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__Responsive__ = __webpack_require__("./node_modules/grommet/es6/components/Responsive/index.js");
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__Select__ = __webpack_require__("./node_modules/grommet/es6/components/Select/index.js");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_28__Select__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__SkipLinks__ = __webpack_require__("./node_modules/grommet/es6/components/SkipLinks/index.js");
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__Stack__ = __webpack_require__("./node_modules/grommet/es6/components/Stack/index.js");
@@ -42239,7 +42239,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 var people = {};
 var formattedArray = [];
-var selectName = '';
 
 var Index =
 /*#__PURE__*/
@@ -42271,25 +42270,22 @@ function (_React$Component) {
       configurable: true,
       enumerable: true,
       writable: true,
-      value: function value() {
-        var name = _this.state.selectName;
-        console.log("name is ".concat(name));
+      value: function value(name, addDrink) {
+        console.log(name);
 
-        _this.setState({
-          people: people[name] = people[name] + 1
-        });
-
-        formattedArray = [];
-        console.log(people);
-
-        for (var prop in people) {
-          formattedArray.push(prop + ":\t" + people[prop] + "\n");
+        if (addDrink === true) {
+          _this.setState({
+            people: people[name] = people[name] + 1
+          });
+        } else if (addDrink === false && people[name] >= 1) {
+          _this.setState({
+            people: people[name] = people[name] - 1
+          });
         }
       }
     });
     _this.state = {
       people: people,
-      selectName: selectName,
       formattedArray: formattedArray
     };
     return _this;
@@ -42300,32 +42296,31 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      var selectName = this.state.selectName;
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 41
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Box */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["b" /* Box */], {
         direction: "column",
         align: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 42
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Box */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["b" /* Box */], {
         direction: "row",
         margin: {
           top: 'medium'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 43
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["c" /* FormField */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["d" /* FormField */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 44
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["l" /* TextInput */], {
         id: "item",
@@ -42333,147 +42328,128 @@ function (_React$Component) {
         placeholder: "Person",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 45
         }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Box */], {
+      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["b" /* Box */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 51
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["b" /* Button */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["c" /* Button */], {
         label: "Add Person",
         onClick: function onClick() {
           return _this2.addName();
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 52
         }
       }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 58
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Box */], {
-        direction: "row",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["f" /* Select */], {
-        id: "drinker",
-        name: "drinker",
-        options: Object.keys(people),
-        placeholder: 'Person',
-        value: selectName,
-        onChange: function onChange(_ref) {
-          var option = _ref.option;
-          return _this2.setState({
-            selectName: option
-          });
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Box */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 72
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["b" /* Button */], {
-        label: "Add drink",
-        onClick: function onClick() {
-          return _this2.changeDrink();
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 73
-        }
-      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 79
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 59
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["g" /* Table */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 60
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["h" /* TableBody */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 61
         }
       }, Object.keys(people).map(function (key, index) {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["j" /* TableRow */], {
           key: key,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 84
+            lineNumber: 63
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["i" /* TableCell */], {
-          size: "xsmall",
+          size: "small",
           scope: "row",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 85
+            lineNumber: 64
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["k" /* Text */], {
           weight: "bold",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 86
+            lineNumber: 65
           }
-        }, key)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_grommet_icons__["b" /* FormSubtract */], {
-          style: {
-            marginTop: '8px'
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 88
-          }
-        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["i" /* TableCell */], {
+        }, key)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["i" /* TableCell */], {
           size: "xxsmall",
           scope: "row",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 89
+            lineNumber: 67
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Anchor */], {
+          onClick: function onClick() {
+            return _this2.changeDrink(key, false);
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 68
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_grommet_icons__["b" /* FormSubtract */], {
+          style: {
+            marginTop: '7px'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 70
+          }
+        }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["i" /* TableCell */], {
+          size: "xxsmall",
+          scope: "row",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 73
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["k" /* Text */], {
           weight: "bold",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 90
+            lineNumber: 74
           }
-        }, people[key])), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["b" /* Button */], {
+        }, people[key])), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["i" /* TableCell */], {
+          size: "xxsmall",
+          scope: "row",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 76
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["a" /* Anchor */], {
           onClick: function onClick() {
-            return _this2.addName();
+            return _this2.changeDrink(key, true);
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 92
+            lineNumber: 77
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_grommet_icons__["a" /* FormAdd */], {
           style: {
-            marginTop: '8px'
+            marginTop: '7px'
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 94
+            lineNumber: 79
           }
-        })));
-      })))));
+        }))));
+      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        }
+      })));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -42502,7 +42478,6 @@ var _default = Index;
 
   reactHotLoader.register(people, "people", "/Users/Martin/PycharmProjects/drinks-counter/pages/index.js");
   reactHotLoader.register(formattedArray, "formattedArray", "/Users/Martin/PycharmProjects/drinks-counter/pages/index.js");
-  reactHotLoader.register(selectName, "selectName", "/Users/Martin/PycharmProjects/drinks-counter/pages/index.js");
   reactHotLoader.register(Index, "Index", "/Users/Martin/PycharmProjects/drinks-counter/pages/index.js");
   reactHotLoader.register(_default, "default", "/Users/Martin/PycharmProjects/drinks-counter/pages/index.js");
   leaveModule(module);
