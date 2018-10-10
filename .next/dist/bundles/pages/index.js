@@ -331,7 +331,7 @@ function (_React$Component) {
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TextInput"], {
         id: "item",
         name: "item",
-        placeholder: "Person",
+        placeholder: "Name",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 46
@@ -342,7 +342,7 @@ function (_React$Component) {
           lineNumber: 52
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Button"], {
-        label: "Add Name",
+        label: "Add",
         onClick: function onClick() {
           return _this2.addName();
         },

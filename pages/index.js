@@ -46,12 +46,12 @@ class Index extends React.Component {
               <TextInput 
                 id='item' 
                 name='item' 
-                placeholder='Person'
+                placeholder='Name'
               />
             </FormField>
             <Box>
               <Button 
-                    label='Add Name'
+                    label='Add'
                     onClick={() => this.addName()}
               />
             </Box>
