@@ -39,6 +39,7 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
+        <br />
         <Box direction='column' align='center'>
           <Box direction='row' margin={{ top: 'medium' }}>
             <FormField>
@@ -50,7 +51,7 @@ class Index extends React.Component {
             </FormField>
             <Box>
               <Button 
-                    label='Add Person'
+                    label='Add Name'
                     onClick={() => this.addName()}
               />
             </Box>
