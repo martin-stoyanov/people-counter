@@ -278,6 +278,7 @@ function (_React$Component) {
         });
 
         formattedArray = [];
+        console.log(people);
 
         for (var prop in people) {
           formattedArray.push(prop + ":\t" + people[prop] + "\n");
@@ -402,7 +403,39 @@ function (_React$Component) {
           fileName: _jsxFileName,
           lineNumber: 80
         }
-      }), formattedArray));
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Table"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableBody"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        }
+      }, Object.keys(people).map(function (key, index) {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableRow"], {
+          key: key,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 84
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableCell"], {
+          size: "xxsmall",
+          scope: "row",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 85
+          }
+        }, key), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableCell"], {
+          size: "xxsmall",
+          scope: "row",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 86
+          }
+        }, people[key]));
+      })))));
     }
   }]);
 

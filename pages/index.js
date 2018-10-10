@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Select, FormField, TextInput, Button } from 'grommet';
-import Layout from '../components/layout';
+import { Box, Select, FormField, TextInput, Button, Table, TableBody, TableRow, TableCell } from 'grommet';import Layout from '../components/layout';
 
 let people = {};
 let formattedArray = [];
@@ -32,6 +31,7 @@ class Index extends React.Component {
       people: people[name]= people[name] + 1
     });
     formattedArray = [];
+    console.log(people);
     for (let prop in people) {
       formattedArray.push(prop + ":\t" + people[prop] + "\n");
     }
@@ -78,7 +78,16 @@ class Index extends React.Component {
           </Box>
           <br />
           <br />
-            {formattedArray}
+          <Table>
+            <TableBody>
+              {Object.keys(people).map((key, index) => (
+                <TableRow key={key}>
+                  <TableCell size='xxsmall' scope='row'>{key}</TableCell>
+                  <TableCell size='xxsmall' scope='row'>{people[key]}</TableCell>
+                </TableRow>
+            ))}
+            </TableBody>
+          </Table>
         </Box>
       </Layout>
     );
