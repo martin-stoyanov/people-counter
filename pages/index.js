@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Select, FormField, TextInput, Button, Table, TableBody, TableRow, TableCell } from 'grommet';import Layout from '../components/layout';
-
+import { Box, Select, FormField, TextInput, Button, Table, TableBody, TableRow, TableCell, Text } from 'grommet';import Layout from '../components/layout';
+import { FormAdd, FormSubtract } from 'grommet-icons';
 let people = {};
 let formattedArray = [];
 let selectName = '';
@@ -15,7 +15,7 @@ class Index extends React.Component {
     };
   }
 
-  onAddName = () => {
+  addName = () => {
     console.log('name added');
     let name = document.getElementById("item").value;
    this.setState({
@@ -24,7 +24,7 @@ class Index extends React.Component {
     console.log(people);
   } 
 
-  onAddDrink = () => {
+  changeDrink = () => {
   let name = this.state.selectName;
   console.log(`name is ${name}`);
    this.setState({
@@ -54,7 +54,7 @@ class Index extends React.Component {
             <Box>
               <Button 
                     label='Add Person'
-                    onClick={() => this.onAddName()}
+                    onClick={() => this.addName()}
               />
             </Box>
           </Box>
@@ -72,7 +72,7 @@ class Index extends React.Component {
               <Box>      
               <Button 
                     label='Add drink'
-                    onClick={() => this.onAddDrink()}
+                    onClick={() => this.changeDrink()}
               />
             </Box>
           </Box>
@@ -82,8 +82,17 @@ class Index extends React.Component {
             <TableBody>
               {Object.keys(people).map((key, index) => (
                 <TableRow key={key}>
-                  <TableCell size='xxsmall' scope='row'>{key}</TableCell>
-                  <TableCell size='xxsmall' scope='row'>{people[key]}</TableCell>
+                  <TableCell size='xsmall' scope='row'>
+                    <Text weight='bold'>{key}</Text>
+                  </TableCell>
+                  <FormSubtract style={{ marginTop: '8px' }}/>
+                  <TableCell size='xxsmall' scope='row'>
+                    <Text weight='bold'>{people[key]}</Text>
+                  </TableCell>
+                  <Button 
+                    onClick={() => this.addName()}>
+                  <FormAdd style={{ marginTop: '8px' }}/>
+                  </Button>
                 </TableRow>
             ))}
             </TableBody>

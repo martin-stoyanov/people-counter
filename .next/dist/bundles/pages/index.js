@@ -216,6 +216,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_grommet__ = __webpack_require__("grommet");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_grommet___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_grommet__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_layout__ = __webpack_require__("./components/layout.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_grommet_icons__ = __webpack_require__("grommet-icons");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_grommet_icons___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_grommet_icons__);
 var _jsxFileName = "/Users/Martin/PycharmProjects/drinks-counter/pages/index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -235,6 +237,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 
+
 var people = {};
 var formattedArray = [];
 var selectName = '';
@@ -250,7 +253,7 @@ function (_React$Component) {
     _classCallCheck(this, Index);
 
     _this = _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).call(this, props));
-    Object.defineProperty(_assertThisInitialized(_this), "onAddName", {
+    Object.defineProperty(_assertThisInitialized(_this), "addName", {
       configurable: true,
       enumerable: true,
       writable: true,
@@ -265,7 +268,7 @@ function (_React$Component) {
         console.log(people);
       }
     });
-    Object.defineProperty(_assertThisInitialized(_this), "onAddDrink", {
+    Object.defineProperty(_assertThisInitialized(_this), "changeDrink", {
       configurable: true,
       enumerable: true,
       writable: true,
@@ -341,7 +344,7 @@ function (_React$Component) {
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Button"], {
         label: "Add Person",
         onClick: function onClick() {
-          return _this2.onAddName();
+          return _this2.addName();
         },
         __source: {
           fileName: _jsxFileName,
@@ -387,7 +390,7 @@ function (_React$Component) {
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Button"], {
         label: "Add drink",
         onClick: function onClick() {
-          return _this2.onAddDrink();
+          return _this2.changeDrink();
         },
         __source: {
           fileName: _jsxFileName,
@@ -421,20 +424,56 @@ function (_React$Component) {
             lineNumber: 84
           }
         }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableCell"], {
-          size: "xxsmall",
+          size: "xsmall",
           scope: "row",
           __source: {
             fileName: _jsxFileName,
             lineNumber: 85
           }
-        }, key), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableCell"], {
-          size: "xxsmall",
-          scope: "row",
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Text"], {
+          weight: "bold",
           __source: {
             fileName: _jsxFileName,
             lineNumber: 86
           }
-        }, people[key]));
+        }, key)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_grommet_icons__["FormSubtract"], {
+          style: {
+            marginTop: '8px'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 88
+          }
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["TableCell"], {
+          size: "xxsmall",
+          scope: "row",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 89
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Text"], {
+          weight: "bold",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 90
+          }
+        }, people[key])), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_grommet__["Button"], {
+          onClick: function onClick() {
+            return _this2.addName();
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 92
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_grommet_icons__["FormAdd"], {
+          style: {
+            marginTop: '8px'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 94
+          }
+        })));
       })))));
     }
   }]);
@@ -458,6 +497,13 @@ module.exports = __webpack_require__("./pages/index.js");
 /***/ (function(module, exports) {
 
 module.exports = require("grommet");
+
+/***/ }),
+
+/***/ "grommet-icons":
+/***/ (function(module, exports) {
+
+module.exports = require("grommet-icons");
 
 /***/ }),
 
