@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text, Button } from 'grommet';
-import Link from 'next/link';
+import { Box, Heading } from 'grommet';
 
 const Header = () => (
   <Box direction='row' pad='medium' align='center' justify='between' background='dark-2'>

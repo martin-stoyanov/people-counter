@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
           <meta name='description' content='Find out the truth about horizontal working...' />
           <meta name='viewport' content='width=device-width,initial-scale=1' />
         </Head>
-        <body style={{ margin: 0, height: 'auto', minHeight: '100vh' }} >
+        <body style={{ margin: 0, height: 'auto', minHeight: '100vh' }}>
           <Main />
           <NextScript />
         </body>
