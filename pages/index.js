@@ -60,12 +60,24 @@ class Index extends React.Component {
           <Table>
             <TableBody>
               {Object.keys(people).map(key => (
-                <TableRow key={key}>
+                <TableRow
+                  key={key}
+                  style={{
+                    WebkitUserSelect: 'none',
+                    KhtmlUserSelect: 'none',
+                    WebkitTouchCallout: 'none',
+                    MozUserSelect: 'none',
+                    OUserSelect: 'none',
+                    UserSelect: 'none',
+                  }}
+                >
                   <TableCell size='xxsmall' scope='row'>
                     <Anchor
                       onClick={() => this.removeName(key)}
                     >
-                      <Close style={{ marginTop: '7px' }} />
+                      <Close
+                        style={{ marginTop: '7px' }}
+                      />
                     </Anchor>
                   </TableCell>
                   <TableCell size='small' scope='row'>
