@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Box, FormField, TextInput, Button, Table, TableBody, TableRow, TableCell, Text, Anchor,
-} from 'grommet'; import { FormAdd, FormSubtract } from 'grommet-icons';
+} from 'grommet'; import { FormAdd, FormSubtract, Close } from 'grommet-icons';
 import Layout from '../components/layout';
 
 const people = {};
@@ -13,6 +13,13 @@ class Index extends React.Component {
       people: people[name] = 0, // eslint-disable-line react/no-unused-state
     });
     console.log(people);
+  }
+
+  removeName = (name) => {
+    delete people[name];
+    this.setState({
+      people, // eslint-disable-line react/no-unused-state
+    });
   }
 
   changeDrink = (name, addDrink) => {
@@ -54,6 +61,13 @@ class Index extends React.Component {
             <TableBody>
               {Object.keys(people).map(key => (
                 <TableRow key={key}>
+                  <TableCell size='xxsmall' scope='row'>
+                    <Anchor
+                      onClick={() => this.removeName(key)}
+                    >
+                      <Close style={{ marginTop: '7px' }} />
+                    </Anchor>
+                  </TableCell>
                   <TableCell size='small' scope='row'>
                     <Text weight='bold'>{key}</Text>
                   </TableCell>

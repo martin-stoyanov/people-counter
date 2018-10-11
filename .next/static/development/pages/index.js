@@ -53151,6 +53151,15 @@ function (_React$Component) {
       console.log(people);
     });
 
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "removeName", function (name) {
+      delete people[name];
+
+      _this.setState({
+        people: people // eslint-disable-line react/no-unused-state
+
+      });
+    });
+
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "changeDrink", function (name, addDrink) {
       console.log(name);
 
@@ -53178,13 +53187,13 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 40
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 41
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -53192,7 +53201,7 @@ function (_React$Component) {
         align: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 42
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -53202,13 +53211,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 43
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["FormField"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 44
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["TextInput"], {
@@ -53217,13 +53226,13 @@ function (_React$Component) {
         placeholder: "Name",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 45
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["Box"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["Button"], {
@@ -53233,31 +53242,31 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 52
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 58
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 59
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["Table"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 60
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["TableBody"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 61
         },
         __self: this
       }, Object.keys(people).map(function (key) {
@@ -53265,22 +53274,48 @@ function (_React$Component) {
           key: key,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 56
+            lineNumber: 63
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
+          size: "xxsmall",
+          scope: "row",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 64
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["Anchor"], {
+          onClick: function onClick() {
+            return _this2.removeName(key);
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 65
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet_icons__WEBPACK_IMPORTED_MODULE_2__["Close"], {
+          style: {
+            marginTop: '7px'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 68
+          },
+          __self: this
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
           size: "small",
           scope: "row",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 57
+            lineNumber: 71
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["Text"], {
           weight: "bold",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 58
+            lineNumber: 72
           },
           __self: this
         }, key)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
@@ -53288,7 +53323,7 @@ function (_React$Component) {
           scope: "row",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 60
+            lineNumber: 74
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["Anchor"], {
@@ -53297,7 +53332,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 61
+            lineNumber: 75
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet_icons__WEBPACK_IMPORTED_MODULE_2__["FormSubtract"], {
@@ -53306,7 +53341,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 64
+            lineNumber: 78
           },
           __self: this
         }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
@@ -53314,14 +53349,14 @@ function (_React$Component) {
           scope: "row",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 67
+            lineNumber: 81
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["Text"], {
           weight: "bold",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 68
+            lineNumber: 82
           },
           __self: this
         }, people[key])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
@@ -53329,7 +53364,7 @@ function (_React$Component) {
           scope: "row",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 70
+            lineNumber: 84
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet__WEBPACK_IMPORTED_MODULE_1__["Anchor"], {
@@ -53338,7 +53373,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 71
+            lineNumber: 85
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grommet_icons__WEBPACK_IMPORTED_MODULE_2__["FormAdd"], {
@@ -53347,14 +53382,14 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 74
+            lineNumber: 88
           },
           __self: this
         }))));
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 95
         },
         __self: this
       })));
