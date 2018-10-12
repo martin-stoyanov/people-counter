@@ -48,6 +48,15 @@ class Index extends React.Component {
                 placeholder='Name'
               />
             </FormField>
+            <Button
+              onClick={() => {
+                document.getElementById('item').value = '';
+              }}
+            >
+              <Close
+                style={{ marginLeft: '10px', marginRight: '10px' }}
+              />
+            </Button>
             <Box>
               <Button
                 label='Add'
