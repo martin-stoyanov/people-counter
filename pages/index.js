@@ -46,6 +46,11 @@ class Index extends React.Component {
                 id='item'
                 name='item'
                 placeholder='Name'
+                onKeyPress={(e) => {
+                  if (e.key === 'Enter') {
+                    this.addName();
+                  }
+                }}
               />
             </FormField>
             <Button
