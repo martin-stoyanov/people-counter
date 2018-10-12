@@ -49,6 +49,7 @@ class Index extends React.Component {
                 onKeyPress={(e) => {
                   if (e.key === 'Enter') {
                     this.addName();
+                    document.getElementById('item').value = '';
                   }
                 }}
               />
