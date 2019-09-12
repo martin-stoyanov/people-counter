@@ -7,12 +7,10 @@ import Layout from '../components/layout';
 const people = {};
 class Index extends React.Component {
   addName = () => {
-    console.log('name added');
     const name = document.getElementById('item').value;
     this.setState({
       people: people[name] = 0, // eslint-disable-line react/no-unused-state
     });
-    console.log(people);
   }
 
   removeName = (name) => {
@@ -23,7 +21,6 @@ class Index extends React.Component {
   }
 
   changeDrink = (name, addDrink) => {
-    console.log(name);
     if (addDrink === true) {
       this.setState({
         people: people[name] += 1, // eslint-disable-line react/no-unused-state
